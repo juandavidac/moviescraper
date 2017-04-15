@@ -24,8 +24,8 @@
       <tr>
         <td><%= movie.title %></td>
         <td><%= movie.hotness %></td>
-        <td><%= movie.image_url %></td>
-        <td><%= movie.synopsis %></td>
+        <td><%= image_tag movie.image_url, class: "thumbnail" %></td>
+        <td><%= movie.synopsis.truncate_words(40) %></td>
         <td><%= movie.rating %></td>
         <td><%= movie.genre %></td>
         <td><%= movie.director %></td>
